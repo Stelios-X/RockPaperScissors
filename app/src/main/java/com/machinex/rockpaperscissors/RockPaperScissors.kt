@@ -27,7 +27,7 @@ fun main()
         }
     }
 
-    //println(computerChoice)
+    println(computerChoice)
 
     //Comparing user and Comp selections
     val winner = when
@@ -37,5 +37,15 @@ fun main()
         playerChoice == "Paper" && computerChoice == "Rock" -> "Player"
         playerChoice == "Scissors" && computerChoice == "Paper" -> "Player"
         else->"Computer"
+    }
+
+    //Generating results
+    if(winner == "Tie")
+    {
+        println("It's a tie")
+    }
+    else
+    {
+        println( "$winner Won!")
     }
 }
